@@ -6,67 +6,145 @@
   <link rel="stylesheet" href="css/styles.css">
   <title>Travel Agent Website</title>
 </head>
-<body>
+<body id="top">
   <header>
-    <div class="logo">moqups</div>
+    <div class="logo"><img src="img/profile_icon.png" alt="wahooo"></div>
     <nav>
-      <a href="#title">Home</a>
-      <a href="#">Our Package</a>
-      <a href="#">Call Us</a>
+      <a href="#top">Home</a>
+      <a href="#our-package">Our Package</a>
+      <a href="#banner">Call Us</a>
     </nav>
   </header>
 
-  <section class="banner">
+  <!-- Banner Section -->
+  <section id="banner" class="banner">
     <h1>Your Trusted Travel Agent's</h1>
     <p>Your happiness is our happiness</p>
   </section>
 
-    <section id="title" class="content">
-      <article class="testimonial">
-        <div class="image-placeholder">
-          <img src="placeholder.png" alt="Travel Image">
-        </div>
-        <p class="quote">"Liburan jadi menyenangkan bersama Travel Agentku."</p>
-        <p class="customer">Florence Hughes</p>
-        <p class="customer-info">Ibu Rumah Tangga, 28</p>
-      </article>
+ <!-- Testimonial Section with Slideshow -->
+<section id="title" class="content">
+  <article class="testimonial">
+    <!-- Slide 1 -->
+    <div class="mySlides fade">
+      <div class="image-placeholder">
+        <img src="placeholder.png" alt="if ya seeing this, then i forgor the image 💀">
+      </div>
+      <p class="quote">"Liburan jadi menyenangkan bersama Travel Agentku."</p>
+      <p class="customer">
+        <img src="img/user_icons/kadem1190.png" alt="Icon" class="testimonial-icon"><br>- Kadem</p>
+      <p class="customer-info">&nbsp;&nbsp;Professional Procrastinator, 16</p>
+    </div>
 
-      <aside class="contact-form">
-        <h3>Contact Us</h3>
-        <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
-        <form id="inquiryForm">
-          <label for="name">Your Name:</label>
-          <input type="text" id="name" placeholder="First and last name" required>
+    <!-- Slide 2 -->
+    <div class="mySlides fade">
+      <div class="image-placeholder">
+        <img src="another-placeholder.png" alt="if ya can see this, then damn i must have dementia 😭">
+      </div>
+      <p class="quote">"Amazing service, totally recommend!"</p>
+      <p class="customer">
+        <img src="img/user_icons/iusearchbtw.jpg" alt="Icon" class="testimonial-icon"><br>- Anonymous Arch User</p>
+      <p class="customer-info">&nbsp;&nbsp;Arch User, 25</p>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="image-placeholder">
+        <img src="another-placeholder.png" alt="'Third times the charm' ahh image failure 😭🙏">
+      </div>
+      <p class="quote">"Amazing service, totally recommend!"</p>
+      <p class="customer">
+        <img src="img/user_icons/perfection.jpg" alt="Icon" class="testimonial-icon"><br>- Perfect Baller</p>
+      <p class="customer-info">&nbsp;&nbsp;Basketball Player, 30</p>
+    </div>
 
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" placeholder="example@email.com" required>
+  </article>
+    <aside class="contact-form" id="contact">
+      <h3>Contact Us</h3>
+      <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+      <form id="inquiryForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="First and last name" >
 
-          <label for="interest">What are you interested in?</label>
-          <select id="interest" required>
-            <option value="">Select option</option>
-            <option value="Vacation">Vacation</option>
-            <option value="Adventure">Adventure</option>
-            <option value="Business Trip">Business Trip</option>
-          </select>
+        <label for="email">Email Address:</label>
+        <input type="text" id="email" placeholder="example@email.com" >
 
-          <button type="submit">SEND</button>
-        </form>
-      </aside>
-    </section>
+        <label for="interest">What are you interested in?</label>
+        <select id="interest">
+          <option value="">Select option</option>
+          <option value="Vacation">Vacation</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Business Trip">Business Trip</option>
+        </select>
 
-    <section class="info-section">
-      <h3>Use this space to provide users with more information about your offer.</h3>
-      <p>Consider it a follow-up to your headline and explain the benefits of your service or product.</p>
-      <ul>
-        <li><span>1</span> Your first feature, written in the form of a benefit statement.</li>
-        <li><span>2</span> Your second feature, written in the form of a benefit statement.</li>
-        <li><span>3</span> Your third feature, written in the form of a benefit statement.</li>
-      </ul>
-    </section>
-
-
-  <section id="balls">
-    balls &nbsp;&nbsp; balls<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br>another balls
+        <button type="submit">SEND</button>
+      </form>
+    </aside>
   </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Why Choose Us?</h2>
+    <div class="feature-list">
+      <div class="feature-item">
+        <div class="circle">1</div>
+        <p>Your first feature, written in the form of a benefit statement.</p>
+      </div>
+      <div class="feature-item">
+        <div class="circle">2</div>
+        <p>Your second feature, written in the form of a benefit statement.</p>
+      </div>
+      <div class="feature-item">
+        <div class="circle">3</div>
+        <p>Your third feature, written in the form of a benefit statement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Package Section -->
+  <section id="our-package" class="our-package">
+    <h2>Our Package</h2>
+    <div class="package-list">
+      <div class="package-item">
+        <h3>Bali</h3>
+        <p>Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</p>
+      </div>
+      <div class="package-item">
+        <h3>Japan</h3>
+        <p>Travel dan wisata di Japan, kunjungi cagar budaya dan kuliner yang menarik</p>
+      </div>
+      <div class="package-item">
+        <h3>Singapore</h3>
+        <p>This description supports and extends the bullet point above.</p>
+      </div>
+      <div class="package-item">
+        <h3>Bandung</h3>
+        <p>This description supports and extends the bullet point above.</p>
+      </div>
+      <div class="package-item">
+        <h3>Surabaya</h3>
+        <p>This description supports and extends the bullet point above.</p>
+      </div>
+      <div class="package-item">
+        <h3>Third Feature</h3>
+        <p>This description supports and extends the bullet point above.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta">
+  <h2>So, why dont we travel now!</h2>
+  <p>Let's travel the world together with the most trustable Agent for your travelling needs!</p>
+  <a href="#title" class="cta-button">CALL TO ACTION</a>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 <a href="https://github.com/Kadem1190">Kadem1190</a> | Baller</p>
+  </footer>
+
 </body>
+<script type="text/javascript" src="js/script.js"></script>
 </html>
+<!--Maaf kalau codenya berantakan wak - Azka-->>
